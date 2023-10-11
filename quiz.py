@@ -1,27 +1,44 @@
 # Importar as bibliotecas necessárias:
+
 import pandas as pd
 import numpy as np
 import datetime as dt
 from time import sleep as sl
+
+#Contagem para definir quantas pessoas responderam o teste
+contagem = 0
+
 # Dicionários de perguntas e respostas:
 # Perguntas
+
+
 questoes =   {"Questão 1": "Constelação são os desenhos que conseguimos ver se imaginarmos uma linha ligando as estrelas",
             "Questão 2": "As estações do ano são definidas por conta da inclinação da Terra com relação ao Sol",
             "Questão 3": "Existe lugares no planeta Terra que ficam 6 meses sem luz Solar",
             "Questão 4": "Buracos negros não são estrelas"
 }
+
 # Opções de resposta
 respostas = {    "1": "Sim/Verdadeiro",
                 "2": "Não/Falso",
                 "3": "Não sei responder"
 }
+
+# Dados dos testers
+
+tester = {
+     
+}
+
 #classes para organizar as partes do código:
 class Menu:
+        
     # Definir as variáveis a serem utilizadas
-    idade = int(input("Sua idade: "))
-    genero = int(input("Com qual gênero você se identifica?\n[1] - Homem Cis\n[2] - Mulher Cis\n[3] - Homem Trans\n[4] - Mulher Trans\n[5] - Não-Binário\n"))
-    contagem = 0
-    
+    # idade = int(input("Sua idade: "))
+    # genero = int(input("Com qual gênero você se identifica?\n[1] - Homem Cis\n[2] - Mulher Cis\n[3] - Homem Trans\n[4] - Mulher Trans\n[5] - Não-Binário\n"))
+    # contagem = 0
+
+
     # Para iniciar o questionário, será solicitado ao usuário que informe a sua idade e gênero.
     def __init__(self, idade, genero):
         self.idade = idade
@@ -37,24 +54,43 @@ class Menu:
               \nII) Caso não queira mais fazer o questionário, responda com '00' quando a idade for perguntada!")
         sl(1)
     
-    # Loop para percorrer pergutas e oferecer opções de respostas
-    for pk, pv in questoes.items():
-        print(f'\n{pk}: {pv}\n')
-        for rk, rv in respostas.items():
-            print(f"{rk}: {rv}\n")
-        respostaUsuario = input("Sua resposta: ")
-        print("*"*50)
+    # # Loop para percorrer pergutas e oferecer opções de respostas
+    # for pk, pv in questoes.items():
+    #     print(f'\n{pk}: {pv}\n')
+    #     for rk, rv in respostas.items():
+    #         print(f"{rk}: {rv}\n")
+    #     respostasUsuario = input("Sua resposta: ")
+    #     print("\n")
+    #     print("*"*50)
 
+    while True:
 
+            dadosTester = [] 
+            
 
+            idade = int(input("Sua idade: "))
+            dadosTester.append(idade)
 
-contagem = 0
+            if idade == 00:
+                print ("\nObrigado por participar do teste!\n")
+                False
+                break
+            else:
+                contagem += 1
+                genero = int(input("\nCom qual gênero você se identifica?\n[1] - Homem Cis\n[2] - Mulher Cis\n[3] - Homem Trans\n[4] - Mulher Trans\n[5] - Não-Binário\n"))
+                dadosTester.append(genero)
 
+                for pk, pv in questoes.items():
+                    print(f'\n{pk}: {pv}\n')
+                    for rk, rv in respostas.items():
+                        print(f"{rk}: {rv}\n")
+                    respostaUsuario = input("Sua resposta: ")
+                    dadosTester.append(respostaUsuario)
+                    print("\n")
+                    print("*"*50)
 
+            print(dadosTester)
 
-# class Questionario:
-#     pass
+            # Atribuir os dados ao dicionário de dados dos testers
+            tester[contagem] = dadosTester
 
-
-# class Respostas:
-#     pass

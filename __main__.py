@@ -10,4 +10,4 @@ if __name__ == "__main__":
     sl(1)
 
 
-import projetonovo as pn
+import quiz as qz

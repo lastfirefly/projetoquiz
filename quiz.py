@@ -59,6 +59,7 @@ class Menu:
         idade = input("Sua idade: ")
                 
         print("\n")
+        sl(1)
 
         if idade == "00":
             print ("\nObrigado por participar do teste!\n")
@@ -91,9 +92,11 @@ class Menu:
                 for pk, pv in questoes.items():
                     while True:
                         print(f'\n{pk}: {pv}\n')
+                        sl(1)
 
                         for rk, rv in respostas.items():
                             print(f"{rk}: {rv}\n")
+                            sl(1)
 
                         respostaUsuario = input("Sua resposta: ")
                         if not respostaUsuario in respostas:

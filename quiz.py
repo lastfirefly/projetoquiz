@@ -13,25 +13,28 @@ contagem = 0
 # Perguntas
 
 
-questoes =   {"Questão 1": "Constelação são os desenhos que conseguimos ver se imaginarmos uma linha ligando as estrelas",
-            "Questão 2": "As estações do ano são definidas por conta da inclinação da Terra com relação ao Sol",
-            "Questão 3": "Existe lugares no planeta Terra que ficam 6 meses sem luz Solar",
-            "Questão 4": "Buracos negros não são estrelas"
+questoes =   {
+    "Questão 1": "Constelação são os desenhos que conseguimos ver se imaginarmos uma linha ligando as estrelas",
+    "Questão 2": "As estações do ano são definidas por conta da inclinação da Terra com relação ao Sol",
+    "Questão 3": "Existe lugares no planeta Terra que ficam 6 meses sem luz Solar",
+    "Questão 4": "Buracos negros não são estrelas"
 }
 
 # Opções de resposta
-respostas = {    "1": "Sim/Verdadeiro",
-                "2": "Não/Falso",
-                "3": "Não sei responder"
+respostas = {
+    "1": "Sim/Verdadeiro",
+    "2": "Não/Falso",
+    "3": "Não sei responder"
 }
 
 # Gêneros
-genero = { "1" : "Homem Cis",
-           "2" : "Mulher Cis",
-           "3" : "Homem Trans",
-           "4" : "Mulher Trans",
-           "5" : "Não Binário",
-        }
+genero_alternativas = { 
+    "1" : "Homem Cis",
+    "2" : "Mulher Cis",
+    "3" : "Homem Trans",
+    "4" : "Mulher Trans",
+    "5" : "Não Binário",
+}
 
 
 # Dados dos testers
@@ -45,8 +48,9 @@ class Menu:
 
     # Para iniciar o questionário, será solicitado ao usuário que informe a sua idade e gênero.
     def __init__(self, idade, genero):
-        self.idade = idade
-        self.genero = genero
+        pass
+        #self.idade = idade
+        #self.genero = genero
     
 
     # Menu inicial
@@ -63,8 +67,6 @@ class Menu:
 
         if idade == "00":
             print ("\nObrigado por participar do teste!\n")
-            
-            False
             break
         try:
             idade = int(idade)
@@ -74,11 +76,12 @@ class Menu:
                 continue  # Volta ao início do loop para pedir a idade novamente
 
             else:
+                dadosTester.append(idade) # adiciona a idade já convertida para inteiro
                 contagem += 1
 
                 #Imprimir opções de gênero
                 
-                for gk, gv in genero.items():
+                for gk, gv in genero_alternativas.items():
                     print(f'{gk}: {gv}')
                 genero = int(input("\nCom qual gênero você se identifica? \n"))
                 dadosTester.append(genero)
@@ -120,3 +123,5 @@ class Menu:
         tester[contagem] = dadosTester
 
         print(tester)
+
+    print(pd.DataFrame(tester.values(), index=tester.keys(), columns=['idade', 'gênero', 'data', 'Resposta 1', 'Resposta 2', 'Resposta 3', 'Resposta 4']))

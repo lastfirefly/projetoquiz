@@ -112,7 +112,7 @@ class Menu:
                             print("\n")
                             print("*"*50)
                             break
-                        
+
         except ValueError:
             print('\nResposta inválida! Digite apenas números inteiros.')
 
@@ -124,4 +124,6 @@ class Menu:
 
         print(tester)
 
-    print(pd.DataFrame(tester.values(), index=tester.keys(), columns=['idade', 'gênero', 'data', 'Resposta 1', 'Resposta 2', 'Resposta 3', 'Resposta 4']))
+    frame = pd.DataFrame(tester.values(), index=tester.keys(), columns=['idade', 'gênero', 'data', 'Resposta 1', 'Resposta 2', 'Resposta 3', 'Resposta 4'])
+    print(frame)
+    frame.to_csv(path_or_buf='./arquivo.csv', sep=';')

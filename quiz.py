@@ -9,16 +9,24 @@ contagem = 0
 # Dicionários de perguntas e respostas:
 # Perguntas
 questoes =   {
-    "Questão 1": "Constelação são os desenhos que conseguimos ver se imaginarmos uma linha ligando as estrelas",
-    "Questão 2": "As estações do ano são definidas por conta da inclinação da Terra com relação ao Sol",
-    "Questão 3": "Existe lugares no planeta Terra que ficam 6 meses sem luz Solar",
-    "Questão 4": "Buracos negros não são estrelas"
+    "Questão 1": "Você tem acesso a Internet?",
+    "Questão 2": " De Acordo com Ricardo Saldanha, autor do livro 'Feliz Produtivo', recomenda-se utilizar as redes sociais por até 2 horas por dia,\
+    \npara evitar problemas de saúde física e mental, como a fadiga ocular, dor de cabeça, sedentarismo, problemas de sono e até mesmo a\
+    \ndependência tecnológica.\n\nVocê utiliza as redes sociais por mais de 2 horas?",
+    "Questão 3": "Voce já trabalhou ou trabalha atualmente nas redes sociais como parte de sua atividade profissional?",
+    "Questão 4": "Um estudo divulgado pela plataforma Cupom Válido, a grande maioria dos usuários utilizam as redes sociais para se manter atualizado \
+    \ncom as notícias e novos acontecimentos (36,5%), encontrar conteúdo engraçado ou de entretenimento (35,0%) e preencher o tempo livre (34,4%).\
+            \n\nDito isso, você também utiliza para essa finalidade?",
+    "Questão 5": "De acordo com um levantamento do Sebrae, cada vez mais, os empreendedores no Estado do Rio de Janeiro utilizam redes sociais para seus negócios.\
+        \n95% dos pequenos negócios estão no Instagram, 65% estão no Facebook, 28% no LinkedIn, 9% estão no YouTube.\
+            \n\nVocê tem, ou utiliza alguma dessas redes para o seu negócio?",
+    "Questão 6": "Você sente que pode ter alguns desses quadros clínicos? Ansiedade, depressão, transtorno de auto-imagem entre outros problemas?",
 }
 # Opções de resposta
 respostas = {
-    "1": "Sim/Verdadeiro",
-    "2": "Não/Falso",
-    "3": "Não sei responder"
+    "1": "Sim",
+    "2": "Não",
+    "3": "Não sei responder / Talvez"
 }
 # Gêneros
 genero_alternativas = { 
@@ -28,12 +36,13 @@ genero_alternativas = {
     "4" : "Mulher Trans",
     "5" : "Não Binário",
 }
-# Armazenador de dados dos testers
+# Dados dos testers
 tester = {
 }
+
 #______FUNÇÃO DE EXPORTAÇÃO PARA .CSV________
 def exportacao():
-    df = pd.DataFrame(tester.values(), index=tester.keys(), columns=['Pessoa', 'Idade', 'Genero', 'Data e hora', 'Resposta 1', 'Resposta 2', 'Resposta 3', 'Resposta 4'])
+    df = pd.DataFrame(tester.values(), index=tester.keys(), columns=['Pessoa', 'Idade', 'Genero', 'Data e hora', 'Resposta 1', 'Resposta 2', 'Resposta 3', 'Resposta 4', 'Resposta 5', 'Resposta 6'])
     df.to_csv(path_or_buf='./arquivo.csv', index=False, sep=';')
 #
 #___________________________________LOOP PRINCIPAL___________________________________________________

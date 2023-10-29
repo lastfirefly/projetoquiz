@@ -71,8 +71,12 @@ while True:
             for gk, gv in genero_alternativas.items():
                 print(f'{gk}: {gv}')
             genero = int(input("\nCom qual gênero você se identifica? \n"))
-            #Se estiver de acordo, anexa a resposta à lista do tester
-            dadosTester.append(genero)
+            if str(genero) in genero_alternativas:
+                #Se estiver de acordo, anexa a resposta à lista do tester
+                dadosTester.append(genero)
+            else:
+                print('\nResposta inválida. Digite apenas números inteiros.\n')
+                continue
             # Anotar a hora do começo das respostas para que seja registrada
             horaResposta = dt.now()
             hora_formatada = horaResposta.strftime('%d/%m/%Y %H:%M:%S')

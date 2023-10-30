@@ -1,4 +1,4 @@
-![All Data Brasil](./docs/img/s00_estrutura_do_projeto.jpg)
+![All Data Brasil](./Fotos/allData_logo_clara.jpeg)
 # All Data Brasil
 
 ## Sobre a All Data Brasil
@@ -35,7 +35,7 @@ Atenciosamente,
 [Seu Nome]
 FGV
 
-![PerguntAI](./Fotos/perguntaAI_logo_escura.jpeg)
+![PerguntAI](./Fotos/perguntaAI_logo_clara.jpeg)
 ## Criação do Aplicativo PerguntAI
 
 ## Sobre o Aplicativo 'PerguntAI'

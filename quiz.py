@@ -50,7 +50,7 @@ while True:
     dadosTester = []
 # Para iniciar o questionário, será solicitado ao usuário que informe a sua idade
     idade = input("Sua idade: ")
-    #sl(0.5)  #Sleep para aguardar o tempo definido em segundos
+    sl(0.5)  #Sleep para aguardar o tempo definido em segundos
     #Se a resposta for 00, encerra o loop
     if idade == "00":
         print ("\nObrigado por participar do teste!\n")
@@ -60,49 +60,51 @@ while True:
     #Tratamento de dados pra que as respostas não estejam fora do padrão pedido
     try:
         idade = int(idade)
-        if idade < 1 or idade > 99:
-            print('\nIdade inválida. A idade deve estar entre 1 e 99.\n')
+        if idade < 10 or idade > 99:
+            print('\nIdade inválida. A idade deve estar entre 10 e 99.\n')
             continue  # Volta ao início do loop para pedir a idade novamente
         else:
             contagem += 1 # Aumentar 1 ao contador para identificar a pessoa entrevistada sem precisar de nome
             dadosTester.append(contagem)
             dadosTester.append(idade)  # Adicionar a idade já convertida para inteiro
             # Imprimir opções de gênero
-            for gk, gv in genero_alternativas.items():
-                print(f'{gk}: {gv}')
-            genero = int(input("\nCom qual gênero você se identifica? \n"))
-            if str(genero) in genero_alternativas:
-                #Se estiver de acordo, anexa a resposta à lista do tester
-                dadosTester.append(genero)
-            else:
-                print('\nResposta inválida. Digite apenas números inteiros.\n')
-                continue
-            # Anotar a hora do começo das respostas para que seja registrada
-            horaResposta = dt.now()
-            hora_formatada = horaResposta.strftime('%d/%m/%Y %H:%M:%S')
-            dadosTester.append(hora_formatada)
-            for pk, pv in questoes.items():
-            # Um segundo loop para imprimir as questões e as opções de respostas
-                while True:
-                    print(f'\n{pk}: {pv}\n')
-                  #  sl(0.5)
-                    for rk, rv in respostas.items():
-                        print(f"{rk}: {rv}\n")
-                     #   sl(0.5)
-                    #Solicita a resposta
-                    respostaUsuario = input("Sua resposta: ")
-                    #Mensagem de erro caso não esteja dentro do esperado
-                    if not respostaUsuario in respostas:
-                        print("\n")
-                        print("*"*50)
-                        print(f'\nOpção inválida. Tente novamente.\n')
-                        print("*"*50)
+            while True:
+                for gk, gv in genero_alternativas.items():
+                    print(f'{gk}: {gv}')
+                genero = input("\nCom qual gênero você se identifica? \n")
+                if genero not in genero_alternativas:
+                    print('\nResposta inválida! Digite apenas uma das opções acima.')
+
+                else:
                     #Se estiver de acordo, anexa a resposta à lista do tester
-                    else:
-                        dadosTester.append(respostaUsuario)
-                        print("\n")
-                        print("*"*50)
-                        break
+                    dadosTester.append(genero)
+                    # Anotar a hora do começo das respostas para que seja registrada
+                    horaResposta = dt.now()
+                    hora_formatada = horaResposta.strftime('%d/%m/%Y %H:%M:%S')
+                    dadosTester.append(hora_formatada)
+                    for pk, pv in questoes.items():
+                    # Um segundo loop para imprimir as questões e as opções de respostas
+                        while True:
+                            print(f'\n{pk}: {pv}\n')
+                            sl(0.5)
+                            for rk, rv in respostas.items():
+                                print(f"{rk}: {rv}\n")
+                                sl(0.5)
+                            #Solicita a resposta
+                            respostaUsuario = input("Sua resposta: ")
+                            #Mensagem de erro caso não esteja dentro do esperado
+                            if not respostaUsuario in respostas:
+                                print("\n")
+                                print("*"*50)
+                                print(f'\nOpção inválida. Tente novamente.\n')
+                                print("*"*50)
+                            #Se estiver de acordo, anexa a resposta à lista do tester
+                            else:
+                                dadosTester.append(respostaUsuario)
+                                print("\n")
+                                print("*"*50)
+                                break
+                    break
     #Se estier errado, devolve o pedido de resposta correta e pede para que seja reinserida a resposta
     except ValueError:
         print('\nResposta inválida! Digite apenas números inteiros.')

@@ -1,6 +1,6 @@
-![All Data Brasil](./docs/img/s00_estrutura_do_projeto.jpg)
-# All Data Brasil
+<img src="Fotos/WhatsApp Image 2023-10-30 at 13.47.03.jpeg" width="200" height="200">
 
+# All Data Brasil
 ## Sobre a All Data Brasil
 
 A **All Data Brasil** é uma empresa inovadora no campo de análise de dados, com foco no mercado brasileiro. Nossa missão é transformar dados brutos em informações valiosas, capacitando nossos clientes a tomar decisões mais embasadas e aprimorar seus produtos e serviços.
@@ -16,8 +16,10 @@ Na All Data Brasil, acreditamos no poder dos dados para impulsionar o sucesso. S
 #
 
 
-![Fundação Getulio Vargas](./docs/img/s00_estrutura_do_projeto.jpg)
-# Parceria de Pesquisa FGV - All Data Brasil
+<img src="Fotos/WhatsApp Image 2023-10-30 at 13.47.03 (2).jpeg" width="300" height="180">
+
+## Fundação Getulio Vargas
+### Parceria de Pesquisa FGV - All Data Brasil
 A **Fundação Getúlio Vargas (FGV)** deseja estabelecer uma parceria com a **All Data Brasil** para realizar uma pesquisa sobre o uso de mídias sociais no Brasil. Esta pesquisa tem como objetivo obter insights valiosos sobre o comportamento dos usuários de redes sociais.
 
 ## Objetivo
@@ -35,17 +37,17 @@ Atenciosamente,
 [Seu Nome]
 FGV
 
-![PerguntAI](./docs/img/s00_estrutura_do_projeto.jpg)
-## Criação do Aplicativo PerguntAI
+<img src="Fotos/WhatsApp Image 2023-10-30 at 13.56.42 (1).jpeg" width="300" height="180">
 
-## Sobre o Aplicativo 'PerguntAI'
+## Criação do Aplicativo PerguntAI
+### Sobre o Aplicativo 'PerguntAI'
 
 O 'PerguntAI' é um aplicativo personalizado, desenvolvido pela All Data Brasil, projetado para atender às necessidades de empresas e corporações que buscam obter insights valiosos por meio de pesquisas de campo e análises de dados. Este aplicativo oferece uma solução completa para simplificar a coleta de informações e transformar dados brutos em visualizações poderosas.
 
 
 ## Fluxograma do Aplicativo
 
-![Fluxograma](./docs/img/s00_estrutura_do_projeto.jpg)
+<img src="Fotos/MODULO 2 - FLUXOGRAMA.jpg">
 
 
 ### Principais Recursos

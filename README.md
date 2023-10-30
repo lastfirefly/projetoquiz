@@ -62,6 +62,12 @@ O 'PerguntAI' é um aplicativo personalizado, desenvolvido pela All Data Brasil,
 
 - **Simplificação da Pesquisa e Modelagem de Dados:** Simplifique o processo de pesquisa e modelagem de dados, economizando tempo e recursos.
 
+## Tecnologia Utilizada
+![Python](https://img.shields.io/badge/Python-yellow?style=for-the-badge&logo=python)
+![CSV](https://img.shields.io/badge/CSV-green?style=for-the-badge)
+![PowerBi](https://img.shields.io/badge/PowerBi-red?style=for-the-badge)
+
+
 ### Como Utilizar
 
 1. Faça o download e instale o 'PerguntAI' em seus dispositivos.

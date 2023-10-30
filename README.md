@@ -1,4 +1,4 @@
-![All Data Brasil](./docs/img/s00_estrutura_do_projeto.jpg)
+![All Data Brasil](./Fotos/allData_logo_clara.jpeg)
 # All Data Brasil
 
 ## Sobre a All Data Brasil
@@ -16,7 +16,7 @@ Na All Data Brasil, acreditamos no poder dos dados para impulsionar o sucesso. S
 #
 
 
-![Fundação Getulio Vargas](./docs/img/s00_estrutura_do_projeto.jpg)
+![Fundação Getulio Vargas](./Fotos/fgv_logo.jpeg)
 # Parceria de Pesquisa FGV - All Data Brasil
 A **Fundação Getúlio Vargas (FGV)** deseja estabelecer uma parceria com a **All Data Brasil** para realizar uma pesquisa sobre o uso de mídias sociais no Brasil. Esta pesquisa tem como objetivo obter insights valiosos sobre o comportamento dos usuários de redes sociais.
 
@@ -35,7 +35,7 @@ Atenciosamente,
 [Seu Nome]
 FGV
 
-![PerguntAI](./docs/img/s00_estrutura_do_projeto.jpg)
+![PerguntAI](./Fotos/perguntaAI_logo_clara.jpeg)
 ## Criação do Aplicativo PerguntAI
 
 ## Sobre o Aplicativo 'PerguntAI'
@@ -45,7 +45,7 @@ O 'PerguntAI' é um aplicativo personalizado, desenvolvido pela All Data Brasil,
 
 ## Fluxograma do Aplicativo
 
-![Fluxograma](./docs/img/s00_estrutura_do_projeto.jpg)
+![Fluxograma](./Fotos/fluxo.jpg)
 
 
 ### Principais Recursos

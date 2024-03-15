@@ -1,4 +1,4 @@
-#Projeto Grupo - Módulo 2
+# Projeto Grupo - Módulo 2
 
 ## Equipe
 - **Co-facilitador:** Debora Rodrigues
@@ -14,18 +14,11 @@
 
 ## Colaboração
 
-![PerguntAI](./Fotos/perguntaAI_logo_clara.jpeg)
 ## Criação do Aplicativo PerguntAI
 
-## Sobre o Aplicativo 'PerguntAI'
+### Sobre o Aplicativo 'PerguntAI'
 
 O 'PerguntAI' é um aplicativo personalizado, desenvolvido pelo grupo, projetado para atender às necessidades de empresas e corporações que buscam obter insights valiosos por meio de pesquisas de campo e análises de dados. Este aplicativo oferece uma solução completa para simplificar a coleta de informações e transformar dados brutos em visualizações poderosas.
-
-
-## Fluxograma do Aplicativo
-
-![Fluxograma](./Fotos/fluxo.jpg)
-
 
 ### Principais Recursos
 
